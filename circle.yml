@@ -3,8 +3,7 @@ machine:
     version: oraclejdk7
   environment:
     ANDROID_HOME: ./android-sdk-linux
-    PATH: /bin:/usr/bin:./android-sdk-linux/tools:./android-sdk-linux/platform-tools
-    M2_HOME: /usr/share/maven
+    PATH: ${PATH}:./android-sdk-linux/tools:./android-sdk-linux/platform-tools
 dependencies:
   override:
     # Install base Android SDK
