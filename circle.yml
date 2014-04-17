@@ -1,14 +1,15 @@
 machine:
 machine:
   pre:
-    - curl -O http://apache.osuosl.org/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz | tar zxf - -C ~/.m2
+    - curl -O http://apache.osuosl.org/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz
+    - tar zxf apache-maven-3.1.1-bin.tar.gz
   java:
     version: oraclejdk7
   environment:
     ANDROID_HOME: ./android-sdk-linux
-    PATH: ${HOME}/android-sdk-linux/tools:${HOME}/android-sdk-linux/platform-tools:${HOME}/.m2/apache-maven-3.1.1/bin:${PATH}
-    M2_HOME: $HOME/.m2/apache-maven-3.1.1/
-    M2: $HOME/.m2/apache-maven-3.1.1/bin/
+    PATH: ${HOME}/android-sdk-linux/tools:${HOME}/android-sdk-linux/platform-tools:${HOME}/apache-maven-3.1.1/bin:${PATH}
+    M2_HOME: $HOME/apache-maven-3.1.1/
+    M2: $HOME/apache-maven-3.1.1/bin/
 dependencies:
   override:
     # Install base Android SDK
