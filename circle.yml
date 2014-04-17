@@ -7,7 +7,7 @@ machine:
     version: oraclejdk7
   environment:
     ANDROID_HOME: ./android-sdk-linux
-    PATH: ${HOME}/android-sdk-linux/tools:${HOME}/android-sdk-linux/platform-tools:${HOME}/apache-maven-3.1.1/bin:${PATH}
+    PATH: $HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platform-tools:$HOME/apache-maven-3.1.1/bin:$PATH
     M2_HOME: $HOME/apache-maven-3.1.1/
     M2: $HOME/apache-maven-3.1.1/bin/
 dependencies:
