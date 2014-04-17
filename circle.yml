@@ -4,6 +4,7 @@ machine:
   environment:
     ANDROID_HOME: ./android-sdk-linux
     PATH: /bin:/usr/bin:./android-sdk-linux/tools:./android-sdk-linux/platform-tools
+    M2_HOME: /usr/share/maven
 dependencies:
   override:
     # Install base Android SDK
