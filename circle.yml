@@ -2,8 +2,8 @@ machine:
   java:
     version: oraclejdk7
   environment:
-    ANDROID_HOME:./android-sdk-linux
-    PATH: '/bin:/usr/bin:./android-sdk-linux'
+    ANDROID_HOME: ./android-sdk-linux
+    PATH: /bin:/usr/bin:./android-sdk-linux
 dependencies:
   pre:
     # Install base Android SDK
