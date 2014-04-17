@@ -1,7 +1,7 @@
 machine:
 machine:
   pre:
-    - curl -O http://apache.osuosl.org/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz | tar -xzf - -C ~/.m2
+    - curl -O http://apache.osuosl.org/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz | tar zxf - -C ~/.m2
   java:
     version: oraclejdk7
   environment:
