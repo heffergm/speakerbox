@@ -5,7 +5,7 @@ machine:
     ANDROID_HOME: ./android-sdk-linux
     PATH: /bin:/usr/bin:./android-sdk-linux/tools:./android-sdk-linux/platform-tools
 dependencies:
-  pre:
+  override:
     # Install base Android SDK
     - wget http://dl.google.com/android/android-sdk_r22.6.1-linux.tgz
     - tar xzf android-sdk_r22.6.1-linux.tgz
